@@ -10,4 +10,4 @@ div.w-full
         div
           h2.font-bold.text-lg.mb-3 = product.title
           p = sanitize(product.description)
-          div.mt-3 = product.price
+          div.mt-3 = number_to_currency product.price
